@@ -42,6 +42,7 @@ logs/
 *.log
 
 # Temporary data and cache
+.agents/
 .cache/
 .pytest_cache/
 .mypy_cache/
