@@ -8,10 +8,6 @@ High-performance OCR service built with FastAPI, designed with modular input sou
 
 ```
 unlimited-ocr/
-├── .agents/
-│   └── skills/
-│       └── commit/
-│           └── SKILL.md             # Custom /commit skill (local only, user identity)
 ├── core/
 │   ├── __init__.py
 │   ├── config.py                    # Environment & application settings
@@ -54,16 +50,6 @@ unlimited-ocr/
 5. **Custom Logging (`core/logger.py`)**:
    - Custom colored log formatter for terminal output.
    - Per-module loggers via `get_logger(name)`.
-
----
-
-## Git Commit Skill (`/commit`)
-
-The repository includes a dedicated `/commit` skill configured in `.agents/skills/commit/SKILL.md`:
-- **Identity**: Commits are strictly authored and committed as `rajandevkota98 <r.devkota.98@gmail.com>`.
-- **Local Commits Only**: Strictly ensures **no commits go to the remote repository** (`git push` is never run).
-- **Zero AI Attribution**: No trailers or AI mentions in commit messages.
-- **Granular Commits**: Staged and committed file-by-file with conventional commit messages.
 
 ---
 
